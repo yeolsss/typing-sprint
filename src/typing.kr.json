@@ -1,0 +1,96 @@
+{
+  "short": [
+    {
+      "id": 1,
+      "text": "빠른 갈색 여우가 게으른 개를 뛰어넘습니다.",
+      "difficulty": "easy",
+      "language": "korean"
+    },
+    {
+      "id": 2,
+      "text": "타이핑은 컴퓨터를 사용하는 기본적인 기술입니다.",
+      "difficulty": "easy",
+      "language": "korean"
+    },
+    {
+      "id": 3,
+      "text": "실력은 연습을 통해 향상됩니다.",
+      "difficulty": "easy",
+      "language": "korean"
+    },
+    {
+      "id": 4,
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "difficulty": "easy",
+      "language": "english"
+    },
+    {
+      "id": 5,
+      "text": "Practice makes perfect when learning new skills.",
+      "difficulty": "easy",
+      "language": "english"
+    },
+    {
+      "id": 6,
+      "text": "프로그래밍은 논리적 사고를 필요로 하는 활동입니다.",
+      "difficulty": "medium",
+      "language": "korean"
+    },
+    {
+      "id": 7,
+      "text": "효율적인 타이핑은 생산성 향상에 큰 도움이 됩니다.",
+      "difficulty": "medium",
+      "language": "korean"
+    },
+    {
+      "id": 8,
+      "text": "Consistency is key to improving your typing speed.",
+      "difficulty": "medium",
+      "language": "english"
+    },
+    {
+      "id": 9,
+      "text": "규칙적인 연습은 모든 기술 향상의 기본입니다.",
+      "difficulty": "hard",
+      "language": "korean"
+    },
+    {
+      "id": 10,
+      "text": "Determination and patience are essential for mastering any skill.",
+      "difficulty": "hard",
+      "language": "english"
+    }
+  ],
+  "long": [
+    {
+      "id": 1,
+      "text": "타이핑 연습은 꾸준히 해야 효과가 있습니다. 매일 조금씩이라도 연습하는 것이 중요합니다. 손가락의 위치를 정확하게 유지하고, 화면을 보면서 타이핑하는 습관을 들이세요. 시간이 지날수록 속도와 정확도가 모두 향상될 것입니다.",
+      "difficulty": "medium",
+      "language": "korean"
+    },
+    {
+      "id": 2,
+      "text": "컴퓨터 프로그래밍은 문제 해결 능력을 키우는 좋은 방법입니다. 복잡한 문제를 작은 단위로 나누어 하나씩 해결해 나가는 과정을 배울 수 있습니다. 또한 논리적으로 사고하는 능력도 함께 향상시킬 수 있어 많은 사람들에게 추천하는 학습 분야입니다.",
+      "difficulty": "medium",
+      "language": "korean"
+    },
+    {
+      "id": 3,
+      "text": "Regular typing practice can significantly improve your productivity when working with computers. It is recommended to practice for at least 15 minutes every day, focusing on accuracy before speed. As you become more comfortable with the keyboard layout, you will naturally begin to type faster without looking at your fingers.",
+      "difficulty": "medium",
+      "language": "english"
+    },
+    {
+      "id": 4,
+      "text": "웹 개발은 프론트엔드와 백엔드로 나눌 수 있습니다. 프론트엔드는 사용자가 직접 보고 상호작용하는 부분을 개발하며, HTML, CSS, JavaScript 등의 기술이 사용됩니다. 백엔드는 서버 측 로직과 데이터베이스를 관리하는 부분으로, 다양한 프로그래밍 언어와 프레임워크가 활용됩니다.",
+      "difficulty": "hard",
+      "language": "korean"
+    },
+    {
+      "id": 5,
+      "text": "Learning to type efficiently is an investment that pays dividends throughout your entire career. Touch typing allows you to focus on your thoughts rather than the keyboard, enabling a more fluid workflow. Many professional writers and programmers can type over 80 words per minute, allowing them to transfer their ideas to the screen almost as quickly as they can think them.",
+      "difficulty": "hard",
+      "language": "english"
+    }
+  ]
+}

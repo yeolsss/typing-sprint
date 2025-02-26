@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**타이핑 연습 웹사이트 기획서**
 
-## Getting Started
+## 1. 개요
 
-First, run the development server:
+타이핑 연습 웹사이트는 사용자가 단문 또는 장문의 문장을 입력하여 타이핑 속도(WPM)와 정확도를 측정할 수 있도록 한다. 이를 통해 사용자는 자신의 타이핑 실력을 향상시킬 수 있다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 2. 핵심 기능
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. 기본 타이핑 기능 구현 및 실시간 속도 및 정확도 표시
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 단문 및 장문 모드 선택 기능
+- 랜덤 문장 제공
+- 사용자가 입력한 텍스트와 원본 문장 비교
+- 실시간 WPM(Words Per Minute, 분당 타이핑 속도) 측정
+- 실시간 정확도 (%) 측정
+- 오타 발생 시 즉각적인 피드백 (색상 강조 등)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. 결과 화면 추가
 
-## Learn More
+- 최종 타이핑 속도 및 정확도 표시
+- 오타 발생 부분 강조
+- 타이핑 소요 시간 표시
+- 점수 또는 등급 시스템 (예: S, A, B, C 등급 부여)
+- 재시작 버튼 및 다른 문장 연습 기능 제공
 
-To learn more about Next.js, take a look at the following resources:
+## 3. 추가 기능 (추후 확장 가능)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 랭킹 시스템 추가 (가장 빠른 타이퍼 순위 제공)
+- 유저별 연습 기록 저장 기능 (Firebase 또는 Supabase 활용)
+- 다국어 지원 (한글, 영어, 일본어 등)
+- 다크 모드 지원
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 4. 개발 스택
 
-## Deploy on Vercel
+### **프론트엔드**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- React + Next.js: UI 구축
+- Tailwind CSS: 빠른 스타일링
+- Canvas API (선택적): 시각적인 타이핑 효과 구현
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **백엔드 (선택 사항)**
+
+- Firebase: 사용자 기록 저장 및 랭킹 시스템 구현
+- Supabase: PostgreSQL 기반 데이터 저장
+
+## 5. 개발 단계
+
+### **MVP (최소 기능 제품) 개발 단계**
+
+1. 기본 타이핑 기능 구현 (실시간 속도 및 정확도 측정 포함)
+2. 결과 화면 추가 (속도, 정확도, 오타 분석)
+3. UI 및 디자인 개선
+4. 테스트 및 버그 수정
+
+추후 기능 확장을 통해 타이핑 RPG 게임 개발에 활용할 수 있도록 한다.
