@@ -1,44 +1,49 @@
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+  src: url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 }
 
 @layer base {
-  body{
+  body {
     font-family: "Nanum Gothic", sans-serif;
   }
 }
 
 @layer utilities {
-
   .animate-blink {
     animation: blink 1s infinite;
   }
 
   @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
   }
 
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 }
 
-
-:root{
+@theme {
   --exact-color: gray;
 }
 
-.dark:root {
+@theme :dark {
   --exact-color: blue;
 }
