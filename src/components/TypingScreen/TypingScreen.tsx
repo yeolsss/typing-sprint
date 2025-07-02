@@ -19,21 +19,17 @@ export default function TypingPractice() {
   } = useTyping();
 
   const containerRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const handleClick = () => {
-    const textarea = containerRef.current?.querySelector("textarea");
-    if (textarea) {
-      textarea.focus();
+    if (textareaRef.current) {
+      textareaRef.current.focus();
     }
   };
 
   return (
-    <div className="relative">
-      <div
-        ref={containerRef}
-        className="relative cursor-text p-4 select-none"
-        onClick={handleClick}
-      >
+    <div className="relative" onClick={handleClick}>
+      <div ref={containerRef} className="relative cursor-text p-4 select-none">
         <TypingText
           words={words}
           inputValue={inputValue}
@@ -50,6 +46,7 @@ export default function TypingPractice() {
         handleFocus={handleFocus}
         handleBlur={handleBlur}
         containerRef={containerRef}
+        textareaRef={textareaRef}
       />
     </div>
   );

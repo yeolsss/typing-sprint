@@ -7,6 +7,7 @@ interface TypingInputProps {
   handleFocus: () => void;
   handleBlur: () => void;
   containerRef: React.RefObject<HTMLDivElement | null>;
+  textareaRef: React.RefObject<HTMLTextAreaElement | null>;
 }
 
 const TypingInput: React.FC<TypingInputProps> = ({
@@ -16,8 +17,8 @@ const TypingInput: React.FC<TypingInputProps> = ({
   handleFocus,
   handleBlur,
   containerRef,
+  textareaRef,
 }) => {
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const textareaContainerRef = useRef<HTMLDivElement>(null);
   const [textareaPosition, setTextareaPosition] = React.useState({
     x: 0,
@@ -44,10 +45,6 @@ const TypingInput: React.FC<TypingInputProps> = ({
     updateTextareaPosition();
   }, [inputValue]);
 
-  const handleClick = () => {
-    if (textareaRef.current) textareaRef.current.focus();
-  };
-
   return (
     <div
       ref={textareaContainerRef}
@@ -57,7 +54,6 @@ const TypingInput: React.FC<TypingInputProps> = ({
         left: `${textareaPosition.x}px`,
         top: `${textareaPosition.y}px`,
       }}
-      onClick={handleClick}
     >
       <textarea
         ref={textareaRef}
