@@ -30,7 +30,7 @@ const TypingText: React.FC<TypingTextProps> = ({
           return (
             <span
               key={charIndex}
-              className={isCorrect ? "text-green-400" : "text-red-400"}
+              className={isCorrect ? "text-green-500" : "text-red-500"}
             >
               {char}
             </span>
