@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="flex">{children}</body>
+      <body className="relative flex h-screen w-screen">{children}</body>
     </html>
   );
 }

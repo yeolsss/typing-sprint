@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 
 interface TypingInputProps {
   inputValue: string;
-  handleInputChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  handleKeyDown: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+  handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
   handleFocus: () => void;
   handleBlur: () => void;
   containerRef: React.RefObject<HTMLDivElement | null>;
-  textareaRef: React.RefObject<HTMLTextAreaElement | null>;
+  inputRef: React.RefObject<HTMLInputElement | null>;
 }
 
 const TypingInput: React.FC<TypingInputProps> = ({
@@ -17,7 +17,7 @@ const TypingInput: React.FC<TypingInputProps> = ({
   handleFocus,
   handleBlur,
   containerRef,
-  textareaRef,
+  inputRef,
 }) => {
   const textareaContainerRef = useRef<HTMLDivElement>(null);
   const [textareaPosition, setTextareaPosition] = React.useState({
@@ -50,13 +50,12 @@ const TypingInput: React.FC<TypingInputProps> = ({
       ref={textareaContainerRef}
       className="z-10"
       style={{
-        position: "absolute",
         left: `${textareaPosition.x}px`,
         top: `${textareaPosition.y}px`,
       }}
     >
-      <textarea
-        ref={textareaRef}
+      <input
+        ref={inputRef}
         value={inputValue}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
@@ -64,7 +63,6 @@ const TypingInput: React.FC<TypingInputProps> = ({
         onBlur={handleBlur}
         className="no-scrollbar h-6 w-32 resize-none border-none bg-transparent text-lg text-transparent caret-transparent outline-none"
         spellCheck={false}
-        autoFocus
       />
     </div>
   );
