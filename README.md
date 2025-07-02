@@ -14,6 +14,10 @@
   - 이전 데이터들은 text로 관리 후 공용 api나 서버 구현 후 연결 예정.
 
 ## 기능 목록 (기능 작성하며 추가할 예정.)
+- placeholder 대로 입력 시 text는 white or black(theme에 따라 다름)
+  - placeholder는 span으로 감싸서 출력한다.
+  - placeholder에 입력되면 정확히 입력시 exact 컬러, 아니면 wrong 컬러 표시
+  - 입력은 textarea에 입력 시키되 스페이스바(공백)으로 단어를 끊어 placeholder 부분을 exact or wrong으로 변경
 - 타이핑 속도 측정
 - 한/영 버전 선택
 
